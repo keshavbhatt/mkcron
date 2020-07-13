@@ -1,0 +1,36 @@
+<RCC>
+    <qresource prefix="/">
+        <file>cron/index.css</file>
+        <file>cron/index.html</file>
+        <file>cron/index.js</file>
+        <file>cron/texture.png</file>
+        <file>icons/icon-16.png</file>
+        <file>icons/icon-32.png</file>
+        <file>icons/icon-64.png</file>
+        <file>icons/icon-128.png</file>
+        <file>icons/icon-512.png</file>
+        <file>icons/icon-256.png</file>
+        <file>cron/icon-64.png</file>
+        <file>cron/icon-128.png</file>
+        <file>cron/toastr/toastr.min.css</file>
+        <file>cron/toastr/toastr.min.js</file>
+        <file>cron/favicon.ico</file>
+        <file>cron/jquery-3.5.1.min.js</file>
+        <file>cron/jtm/jquery.tinymodal.css</file>
+        <file>cron/jtm/jquery.tinymodal.js</file>
+        <file>cron/route.json</file>
+        <file>icons/others/close-fill.png</file>
+        <file>icons/others/delete-bin-5-line.png</file>
+        <file>icons/others/error-warning-line.png</file>
+        <file>icons/others/eye-line.png</file>
+        <file>icons/others/file-copy-line.png</file>
+        <file>icons/others/file-text-line.png</file>
+        <file>icons/others/file-unknow-line.png</file>
+        <file>icons/others/folder-open-line.png</file>
+        <file>icons/others/information-line.png</file>
+        <file>icons/others/links-line.png</file>
+        <file>icons/others/link-unlink-m.png</file>
+        <file>icons/others/paypal-line.png</file>
+        <file>icons/others/star-line.png</file>
+    </qresource>
+</RCC>
