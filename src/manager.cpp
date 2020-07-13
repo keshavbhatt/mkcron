@@ -10,6 +10,7 @@
 #include <QJsonArray>
 
 #include <QMessageBox>
+#include <QFileDialog>
 
 inline void saveJson(QJsonDocument document, QString fileName)
 {
@@ -284,4 +285,32 @@ void Manager::on_title_textChanged(const QString &arg1)
 {
     ui->copyDefinition->setEnabled(!arg1.trimmed().isEmpty());
     ui->saveDefinition->setEnabled(!arg1.trimmed().isEmpty());
+}
+
+void Manager::on_selectApplication_clicked()
+{
+    QFileDialog file_dialog(this, tr("Select Executable"));
+    file_dialog.setFilter(QDir::Executable | QDir::Files);
+    QString file = file_dialog.getOpenFileName(this, tr("Select Exectuable"));
+    ui->application->setText(file);
+}
+
+void Manager::on_removeAll_clicked()
+{
+    if(ui->saved->count()<1)
+        return;
+    QMessageBox msgBox;
+    msgBox.setText("Remove all items from bookmark ?");
+    msgBox.setIconPixmap(QPixmap(":/icons/others/error-warning-line.png").scaled(42,42,Qt::KeepAspectRatio,Qt::SmoothTransformation));
+    msgBox.setInformativeText("Choosing \"Yes\" will remove all item from bookmark.");
+    msgBox.setStandardButtons(QMessageBox::Cancel | QMessageBox::Yes );
+    msgBox.setDefaultButton(QMessageBox::Cancel);
+    int ret = msgBox.exec();
+    if(ret == QMessageBox::Cancel){
+        return;
+    }else{
+        QDir saved(utils::returnPath("saved"));
+        saved.removeRecursively();
+        ui->saved->clear();
+    }
 }

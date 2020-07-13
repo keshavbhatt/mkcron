@@ -57,6 +57,10 @@ private slots:
     void showItemDetail(QVariant data);
     void removeItem(QString objectName);
     bool deleteSavedFile(QString fileId);
+    void on_selectApplication_clicked();
+
+    void on_removeAll_clicked();
+
 private:
     Ui::Manager *ui;
     QClipboard *clipboard = nullptr;

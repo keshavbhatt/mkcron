@@ -6,8 +6,8 @@
    <rect>
     <x>0</x>
     <y>0</y>
-    <width>297</width>
-    <height>526</height>
+    <width>393</width>
+    <height>600</height>
    </rect>
   </property>
   <property name="windowTitle">
@@ -102,21 +102,49 @@
        </property>
        <layout class="QVBoxLayout" name="verticalLayout_4">
         <item>
-         <widget class="QLineEdit" name="title">
-          <property name="placeholderText">
-           <string>give a title</string>
+         <layout class="QHBoxLayout" name="horizontalLayout_6">
+          <property name="topMargin">
+           <number>0</number>
           </property>
-         </widget>
+          <item>
+           <widget class="QLabel" name="label">
+            <property name="text">
+             <string>Title</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="title">
+            <property name="placeholderText">
+             <string>give a title</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
-         <widget class="QLineEdit" name="definition">
-          <property name="readOnly">
-           <bool>true</bool>
+         <layout class="QHBoxLayout" name="horizontalLayout_5">
+          <property name="topMargin">
+           <number>0</number>
           </property>
-          <property name="placeholderText">
-           <string>definition</string>
-          </property>
-         </widget>
+          <item>
+           <widget class="QLabel" name="label_2">
+            <property name="text">
+             <string>Definition</string>
+            </property>
+           </widget>
+          </item>
+          <item>
+           <widget class="QLineEdit" name="definition">
+            <property name="readOnly">
+             <bool>true</bool>
+            </property>
+            <property name="placeholderText">
+             <string>definition</string>
+            </property>
+           </widget>
+          </item>
+         </layout>
         </item>
         <item>
          <layout class="QHBoxLayout" name="horizontalLayout_3">
