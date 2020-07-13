@@ -8,4 +8,4 @@ Keywords=cron;schedule
 Exec=mkcron %F
 Categories=Utility;Qt;
 Terminal=false
-Name[en_US]=mkcron
+Name[en_US]=MkCron
